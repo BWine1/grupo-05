@@ -1,0 +1,16 @@
+# MSResident/src/main/resources/application.yml
+server:
+  port: 8081  # Porta única!
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/resident_db  # Banco de dados
+    username: root
+    password: senha123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # Configuração básica de segurança (opcional)
+  security:
+    user:
+      name: admin
+      password: 12345
